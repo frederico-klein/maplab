@@ -13,6 +13,10 @@ set(PROTO_DEFNS proto/aslam/common/id.proto)
 PROTOBUF_CATKIN_GENERATE_CPP2("proto" PROTO_SRCS PROTO_HDRS ${PROTO_DEFNS})
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
+#get_target_property(MAIN_INCLUDES your_target_name INCLUDE_DIRECTORIES)
+message(STATUS "Include directories: ${INCLUDE_DIRECTORIES}")
+
+
 #############
 # LIBRARIES #
 #############
@@ -33,6 +37,9 @@ set(SOURCES
 )
 
 cs_add_library(${PROJECT_NAME} ${SOURCES})
+
+
+
 
 ##########
 # GTESTS #

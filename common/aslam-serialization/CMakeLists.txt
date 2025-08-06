@@ -4,9 +4,19 @@ project(aslam_serialization)
 find_package(catkin_simple REQUIRED)
 catkin_simple(ALL_DEPS_REQUIRED)
 
+#find_package(Protobuf REQUIRED)
+#message(WARNING "Protobuf found: ${Protobuf_FOUND}")
+#message(WARNING "Protobuf version: ${Protobuf_VERSION}")
+#message(WARNING "Protobuf include: ${Protobuf_INCLUDE_DIRS}")
+#message(WARNING "Protobuf compiler: ${Protobuf_PROTOC_EXECUTABLE}")
+
+#message(WARNING "wsklgjfldikjglkdfjg ${Protobuf_IMPORT_DIRS} ")
+#set(Protobuf_IMPORT_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/proto")
 ############
 # PROTOBUF #
 ############
+#message(WARNING " the freaking headers for proto ${PROTO_HDRS}")
+
 SET(PROTO_DEFNS proto/aslam-serialization/camera.proto
                 proto/aslam-serialization/visual-frame.proto)
 PROTOBUF_CATKIN_GENERATE_CPP2("proto" PROTO_SRCS PROTO_HDRS ${PROTO_DEFNS})
