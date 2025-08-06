@@ -154,7 +154,7 @@ FeatureTrackingDetectorSettings::FeatureTrackingDetectorSettings()
           FLAGS_feature_tracking_detector_orb_pyramid_levels),
       orb_detector_first_level(0),
       orb_detector_WTA_K(2),
-      orb_detector_score_type(cv::ORB::ScoreType::HARRIS_SCORE),
+      orb_detector_score_type(cv::ORB::HARRIS_SCORE),
       orb_detector_patch_size(FLAGS_feature_tracking_detector_orb_patch_size),
       orb_detector_score_lower_bound(
           FLAGS_feature_tracking_detector_orb_score_lower_bound),

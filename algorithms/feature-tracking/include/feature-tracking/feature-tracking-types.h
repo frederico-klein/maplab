@@ -47,7 +47,7 @@ struct FeatureTrackingDetectorSettings {
   // The default HARRIS_SCORE means that Harris algorithm is used to rank
   // features. FAST_SCORE is alternative value of the parameter that produces
   // slightly less stable keypoints, but it is a little faster to compute.
-  cv::ORB::ScoreType orb_detector_score_type;
+  int orb_detector_score_type;
   // Size of the patch used by the oriented BRIEF descriptor. Of course, on
   // smaller pyramid layers the perceived image area covered by a feature will
   // be larger.
